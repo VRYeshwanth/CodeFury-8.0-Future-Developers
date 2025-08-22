@@ -8,3 +8,47 @@
     background-color: #181818;
     color: #e0e0e0;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+nav i {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #00bcd4;
+    background: none;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    background: none;
+}
+
+nav ul li {
+    background: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #00bcd4;
+    color: #181818;
+}
