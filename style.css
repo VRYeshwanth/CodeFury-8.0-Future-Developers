@@ -9,6 +9,12 @@
     color: #e0e0e0;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -52,6 +58,105 @@ nav ul li a.active {
     background: #00bcd4;
     color: #181818;
 }
+
+/* Home Section Styles */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 5rem;
+}
+
+.home-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-content h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 18px;
+    line-height: 1.1;
+}
+
+.home-sub {
+    font-size: 1.25rem;
+    color: #e0e0e0;
+    margin-bottom: 32px;
+    background: none;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 24px;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 18px 34px;
+    border-radius: 32px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 12px #00e5ff22;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-orange {
+    background: #ff9800;
+    color: #fff;
+    box-shadow: 0 0 18px #ff980055;
+}
+
+.btn-orange:hover {
+    background: #ffb74d;
+    color: #222;
+}
+
+.btn-outline {
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #244a8f;
+}
+
+.home-image-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 420px;
+    max-width: 600px;
+}
+
+.home-image-frame {
+    background: #fff;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px #244a8f44;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 24px;
+    object-fit: cover;
+    box-shadow: 0 4px 24px #244a8f33;
+}
+
 
 /* Wrapper */
 .wrap {
