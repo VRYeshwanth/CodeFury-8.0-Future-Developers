@@ -62,49 +62,81 @@ nav ul li a.active {
 h1 {
   text-align: center;
   margin-bottom: 10px;
+  color: #00e5ff;
 }
 .sub {
   text-align: center;
-  color: var(--muted);
+  color: #aaa;
   margin-bottom: 24px;
 }
 
 /* Grid */
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 22px;
+  justify-content: center;         /* center grid items */
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 28px;
+  padding: 10px;
 }
+
+/* Card */
 .card {
-  background: var(--card);
-  border: 1px solid var(--ring);
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid rgba(0, 188, 212, 0.4);
+  background: linear-gradient(145deg, #1e1e1e, #111);
+  position: relative;
+  overflow: hidden;
 }
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(15,23,42,0.1);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 25px #00e5ff88, 0 0 50px #00e5ff44;
+  animation: float 3s ease-in-out infinite;
 }
+
 .card-icon {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #00e5ff;
 }
 .card h2 {
   margin-bottom: 8px;
   font-size: 1.3rem;
+  color: #00bcd4;
 }
 .card p {
-  color: var(--muted);
+  color: #bbb;
   margin-bottom: 10px;
 }
 .card ul {
   list-style: none;
-  color: #111827;
 }
 .card ul li {
   margin-bottom: 6px;
+  color: #e0e0e0;
 }
 
+/* Neon Variants */
+.red-card {
+  border-color: #ff004c;
+  box-shadow: 0 0 12px #ff004c55;
+}
+.red-card h2 { color: #ff4d6d; }
+.red-card .card-icon { color: #ff004c; }
 
+.yellow-card {
+  border-color: #ffe600;
+  box-shadow: 0 0 12px #ffe60055;
+}
+.yellow-card h2 { color: #ffee58; }
+.yellow-card .card-icon { color: #ffe600; }
