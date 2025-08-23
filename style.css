@@ -243,8 +243,7 @@ nav ul li a.active {
 
 
 
-
-in css : /* Resources Section */
+/* Resources Section */
 .resources {
   background: linear-gradient(135deg, #0b0b0b);
   padding: 80px 20px;
