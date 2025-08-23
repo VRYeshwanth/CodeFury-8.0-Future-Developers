@@ -372,6 +372,9 @@ nav ul li a.active {
 
 
 /*Game section*/
+.hidden {
+    display: none;
+}
 
 .threat-simulator {
     padding: 80px 20px;
