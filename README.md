@@ -1,12 +1,12 @@
-# CodeFury-8.0-Future-Developers
+# CodeFury -8.0 Hackthon
 
 # 🚨 ScamShield Simulator
 
 > **An interactive cyber safety learning project designed to protect seniors, rural communities, students, teachers, and tech enthusiasts from online scams.**
 
 ![Cyber Safety](https://img.shields.io/badge/Cyber-Safety-blue?style=for-the-badge)
-![Game Based Learning]([https://img.shields.io/badge/Game-Interactive-green?style=for-the-badge](https://ibb.co/0yCmCMMW))
-![PDF Reports](https://ibb.co/tMSLNJvm)
+![Game Based Learning](https://img.shields.io/badge/Game-Interactive-green?style=for-the-badge)
+![PDF Reports](https://img.shields.io/badge/Reports-PDF-red?style=for-the-badge)
 ![Modern UI](https://img.shields.io/badge/UI-Modern-orange?style=for-the-badge)
 
 ---
@@ -29,7 +29,7 @@
 
 ## 📌 About the Project
 
-**ScamShield** is a web-based platform that educates users about scams through an **interactive game**.
+**ScamShield Simulator** is a web-based platform that educates users about scams through an **interactive game**.
 Users must decide whether a scenario is **“Scam” or “Safe”** across **10 curated questions**.
 At the end, they receive a **personalized PDF report** with their results and safety tips.
 
@@ -86,12 +86,13 @@ It also includes:
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/scamshield.git
+cd scamshield
 
 # Install dependencies
 npm install
 
 # Run the server
-npm start
+node server.js
 ```
 
 Then open: **[http://localhost:3000/](http://localhost:3000/)**
@@ -108,7 +109,7 @@ ScamShield/
 ├── server.js          # Node.js backend
 ├── script.js          # Game logic + interactions
 ├── data.js            # Scam & safe question prompts
-└── images/            # Images, icons, PDFs, resources
+└── assets/            # Images, icons, PDFs, resources
 ```
 
 ---
@@ -124,11 +125,11 @@ ScamShield/
 
 ## 🖼 Screenshots
 
-
+*(Add actual UI screenshots of your app here)*
 
 | Game Screen                          | PDF Result                         | Resources Page                                 |
 | ------------------------------------ | ---------------------------------- | ---------------------------------------------- |
-| ![Game](assets/screenshots/game.png) | ![PDF](assets/screenshots/pdf.png) | ![Resources](assets/screenshots/resources.png) |
+| ![Game](https://ibb.co/C3QmVwDb) | ![PDF](https://ibb.co/tMSLNJvm) | ![Resources](https://ibb.co/tMjnFJFH) |
 
 ---
 
@@ -145,14 +146,13 @@ ScamShield/
 
 * **Team ScamShield** 💡
 
-  * Shrihari Jawalgi
-  * VR Yeshwanth 
-  * U Akash [MArvel R&D]
-  * Suraj Hulagur [E-cell, Marvel R&D]
+  * Shrihari (Cyber Bhai)
+  * VR Yeshwanth
+  * U Akash
+  * Suraj Hulagur
 
 ---
 
 🔥 **ScamShield – Because awareness is the first defense against scams.**
 
 ---
-
