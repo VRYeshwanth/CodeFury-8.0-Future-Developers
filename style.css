@@ -483,3 +483,80 @@ nav ul li a.active {
     background: none;
 }
 
+footer {
+    width: 100%;
+    background: #181818;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 40px 0 24px;
+    border-top: 1px solid #222;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.footer-team {
+    margin-top: 18px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.footer-team span {
+    color: #00bcd4;
+}
+
+.footer-members {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin: 24px 0 18px;
+    flex-wrap: wrap;
+}
+
+.footer-members span {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.footer-members span:hover {
+    color: #00bcd4;
+}
+
+.footer-separator {
+    width: 60%;
+    margin: 0 auto 24px auto;
+    border: none;
+    border-top: 1px solid #9da4b0;
+    opacity: 0.7;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.footer-logo i {
+    font-size: 2.2rem;
+    color: #00bcd4;
+    background: none;
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    background: none;
+}
+
+.footer-bottom {
+    margin-top: 24px;
+    font-size: 1rem;
+    color: #a0aec0;
+    background: none;
+}
