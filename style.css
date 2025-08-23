@@ -7,6 +7,7 @@
     font-family: Poppins, sans-serif;
     background-color: #181818;
     color: #e0e0e0;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -30,6 +31,16 @@ nav i {
     color: #00bcd4;
     background: none;
     cursor: pointer;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    background: none;
+    display: block;
+    position: absolute;
+    left: 100px;
 }
 
 nav ul {
@@ -157,6 +168,7 @@ nav ul li a.active {
     box-shadow: 0 4px 24px #244a8f33;
 }
 
+/* For You Section */
 
 .for-you-section {
         padding: 100px 0;
@@ -178,7 +190,7 @@ nav ul li a.active {
     }
     .for-you-section .sub {
         font-size: 1.2rem;
-        color: #444;
+        color: #fff;
         margin-bottom: 40px;
     }
     .for-you-grid {
