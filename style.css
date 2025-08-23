@@ -41,7 +41,10 @@ nav i {
     font-weight: 700;
     color: #ffffff;
     background: none;
-    margin-left: -10px;
+    margin-left: 1px;
+      line-height: 1;
+      /* vertical-align: upper; */
+          margin-top: -15px;
 }
 
 nav ul {

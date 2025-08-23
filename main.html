@@ -1,422 +1,381 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head> 
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>ScamShield</title>
-          <link rel="stylesheet" href="style.css">
-           <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-         </head> 
-         <body>
-            <header>
-    <nav class="navbar">
-        <i class="bx bx-shield"></i>
-        <span class="nav-title">ScamShield</span>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#for-you">For You</a></li>
-            <li><a href="#threats">Threats</a></li>
-            <li><a href="#games">Game</a></li>
-            <li><a href="#resources">Resources</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="home-section" id="home">
-    <div class="home-content">
-        <h1>Protecting Digital India<br>from Cyber Threats</h1>
-        <p class="home-sub">
-            Empowering every Indian with knowledge and tools to stay safe online. Learn to recognize, prevent, and respond to cyber fraud.
-        </p>
-        <div class="home-buttons">
-            <a href="#games" class="btn btn-orange">Try our Game</a>
-            <a href="#for-you" class="btn btn-outline">Find Your Protection</a>
-        </div>
-    </div>
-    <div class="home-image-card">
-        <div class="home-image-frame">
-            <img src="./images/home-section-img.png" alt="Image of a person helping another person" class="home-img">
-        </div>
-    </div>
-</section>
-
-<section class="threats" id="threats">
-    <h1>Digital Safety First</h1>
-    <p class="sub">Understanding these threats is the first step toward protection. Learn to recognize the warning signs.</p>
-    <div class="grid">
-        <div class="card red-card">
-            <div class="card-icon">🐟</div>
-            <h2>Phishing Emails</h2>
-            <p>Fake emails pretending to be from banks, government, or popular services.</p>
-            <ul>
-                <li>Check sender email address</li>
-                <li>Look for spelling errors</li>
-                <li>Never click suspicious links</li>
-            </ul>
-        </div>
-        
-        <div class="card yellow-card">
-            <div class="card-icon">📞</div>
-            <h2>Fake OTP Calls</h2>
-            <p>Scammers call pretending to be bank officials asking for OTP.</p>
-            <ul>
-                <li>Banks never call for OTP</li>
-                <li>Verify caller identity</li>
-                <li>Hang up and call bank directly</li>
-            </ul>
-        </div>
-        
-        <div class="card blue-card">
-            <div class="card-icon">📱</div>
-            <h2>UPI Scams</h2>
-            <p>Fake payment requests, QR code scams, and payment reversal tricks.</p>
-            <ul>
-                <li>Verify before paying</li>
-                <li>Use trusted contacts only</li>
-                <li>Enable transaction alerts</li>
-            </ul>
-        </div>
-        
-        <div class="card purple-card">
-            <div class="card-icon">🪪</div>
-            <h2>Identity Theft</h2>
-            <p>Stealing personal information to commit fraud or open accounts.</p>
-            <ul>
-                <li>Share minimal personal info</li>
-                <li>Use strong passwords</li>
-                <li>Monitor financial statements</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="for-you-section" id="for-you">
-    <h1>Tailored Protection for You</h1>
-    <p class="sub">Different groups face different risks. Find customized safety guidance for your needs.</p>
-    <div class="for-you-grid">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front students-card">
-                    <div class="for-you-icon"><i class="bx bx-user"></i></div>
-                    <h2>Students</h2>
-                    <p>Protect yourself from scholarship scams, fake job offers, and social media threats.</p>
-                </div>
-                <div class="flip-card-back students-card">
-                    <h3>Student Safety Tips</h3>
-                    <ul>
-                        <li>✓ Verify internship offers directly with companies</li>
-                        <li>✓ Use strong passwords for educational portals</li>
-                        <li>✓ Be cautious of too good to be true scholarship offers</li>
-                        <li>✓ Enable two-factor authentication everywhere</li>
-                    </ul>
-                    <a href="https://www.cosn.org/wp-content/uploads/2021/09/K-12-Cybersecurity-Toolkit.pdf" class="for-you-btn">Get Student Guide</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front professionals-card">
-                    <div class="for-you-icon"><i class="bx bx-briefcase"></i></div>
-                    <h2>Professionals</h2>
-                    <p>Secure your work accounts, avoid business email compromise, and protect company data.</p>
-                </div>
-                <div class="flip-card-back professionals-card">
-                    <h3>Professional Safety</h3>
-                    <ul>
-                        <li>✓ Use VPN for remote work connections</li>
-                        <li>✓ Enable two-factor authentication</li>
-                        <li>✓ Beware of phishing emails</li>
-                        <li>✓ Keep software updated</li>
-                        <li>✓ Report suspicious activity to IT</li>
-                    </ul>
-                    <a href="https://www.cisa.gov/sites/default/files/2024-09/Cybersecurity-Awareness-Month-2024-Toolkit-Guide.pdf" class="for-you-btn">Get Workplace Safety Kit</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front homemakers-card">
-                    <div class="for-you-icon"><i class="bx bx-home"></i></div>
-                    <h2>Homemakers</h2>
-                    <p>Stay safe from online shopping fraud, fake customer care, and social media scams.</p>
-                </div>
-                <div class="flip-card-back homemakers-card">
-                    <h3>Home Safety Guide</h3>
-                    <ul>
-                        <li>✓ Shop only on trusted sites</li>
-                        <li>✓ Never share OTP with delivery staff</li>
-                        <li>✓ Use official customer care numbers</li>
-                        <li>✓ Be cautious of social media offers</li>
-                        <li>✓ Secure WiFi with strong password</li>
-                    </ul>
-                    <a href="https://g20.in/content/dam/gtwenty/gtwenty_new/document/Toolkit_Cyber_Edu_and_Cyber_Awareness.pdf" class="for-you-btn">Get Home Safety Kit</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front seniors-card">
-                    <div class="for-you-icon"><i class="bx bx-group"></i></div>
-                    <h2>Senior Citizens</h2>
-                    <p>Protect against KYC fraud, banking scams, and misinformation campaigns.</p>
-                </div>
-                <div class="flip-card-back seniors-card">
-                    <h3>Senior Safety Guide</h3>
-                    <ul>
-                        <li>✓ Never share OTP or PIN over phone</li>
-                        <li>✓ Verify caller identity independently</li>
-                        <li>✓ Be cautious of urgent payment requests</li>
-                        <li>✓ Use official bank branches for queries</li>
-                        <li>✓ Ask family before making online payments</li>
-                    </ul>
-                    <a href="#" class="for-you-btn">Get Senior Safety Kit</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front elderly-card">
-                    <div class="for-you-icon"><i class="bx bx-heart"></i></div>
-                    <h2>Elderly</h2>
-                    <p>Avoid pension scams, fake health products, and tech support fraud.</p>
-                </div>
-                <div class="flip-card-back elderly-card">
-                    <h3>Elderly Protection</h3>
-                    <ul>
-                        <li>✓ Verify pension-related communications</li>
-                        <li>✓ Be skeptical of miracle health products</li>
-                        <li>✓ Never allow remote computer access</li>
-                        <li>✓ Confirm with family before major purchases</li>
-                        <li>✓ Use trusted local support for tech issues</li>
-                    </ul>
-                    <a href="#" class="for-you-btn">Get Elderly Safety Kit</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front business-card">
-                    <div class="for-you-icon"><i class="bx bx-buildings"></i></div>
-                    <h2>Business Owners</h2>
-                    <p>Protect against payment fraud, fake invoices, and data breaches.</p>
-                </div>
-                <div class="flip-card-back business-card">
-                    <h3>Business Security</h3>
-                    <ul>
-                        <li>✓ Implement multi-factor authentication</li>
-                        <li>✓ Train employees on phishing detection</li>
-                        <li>✓ Verify payment requests through multiple channels</li>
-                        <li>✓ Regular security audits and updates</li>
-                        <li>✓ Backup critical business data regularly</li>
-                    </ul>
-                    <a href="#" class="for-you-btn">Get Business Safety Kit</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="threat-simulator" id="games">
-    <h2>Interactive Cyber Games</h2>
-    <p>Experience real-life scam scenarios and learn how to respond correctly.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScamShield</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
     
-    <div id="start-screen">
-        <div class="text-center">
-            <div class="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i class="fas fa-gamepad text-4xl"></i>
+    <header>
+        <nav class="navbar">
+         <div class="nav-logo">
+    <i class="bx bx-shield"></i>
+    <span class="nav-title">ScamShield</span>
+</div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#for-you">For You</a></li>
+                <li><a href="#threats">Threats</a></li>
+                <li><a href="">Game</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home-section" id="home">
+        <div class="home-content">
+            <h1>Protecting Digital India<br>from Cyber Threats</h1>
+            <p class="home-sub">
+                Empowering every Indian with knowledge and tools to stay safe online. Learn to recognize, prevent, and respond to cyber fraud.
+            </p>
+            <div class="home-buttons">
+                <a href="#" class="btn btn-orange">Try our Game</a>
+                <a href="#" class="btn btn-outline">Find Your Protection</a>
             </div>
-            <h3 class="text-2xl font-bold mb-4">Test Your Cyber Safety Skills</h3>
-            <p class="mb-6">10 questions in 60 seconds. Can you spot all the scams?</p>
+        </div>
+        <div class="home-image-card">
+            <div class="home-image-frame">
+                <img src="./images/home-section-img.png" alt="Image of a person helping another person" class="home-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="for-you-section" id="for-you">
+        <h1>Tailored Protection for You</h1>
+        <p class="sub">Different groups face different risks. Find customized safety guidance for your needs.</p>
+        <div class="for-you-grid">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front students-card">
+                        <div class="for-you-icon"><i class="bx bx-user"></i></div>
+                        <h2>Students</h2>
+                        <p>Protect yourself from scholarship scams, fake job offers, and social media threats.</p>
+                    </div>
+                    <div class="flip-card-back students-card">
+                        <h3>Student Safety Tips</h3>
+                        <ul>
+                            <li>✓ Verify internship offers directly with companies</li>
+                            <li>✓ Use strong passwords for educational portals</li>
+                            <li>✓ Be cautious of too good to be true scholarship offers</li>
+                            <li>✓ Enable two-factor authentication everywhere</li>
+                        </ul>
+                        <a href="https://www.cosn.org/wp-content/uploads/2021/09/K-12-Cybersecurity-Toolkit.pdf" class="for-you-btn">Get Student Guide</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front professionals-card">
+                        <div class="for-you-icon"><i class="bx bx-briefcase"></i></div>
+                        <h2>Professionals</h2>
+                        <p>Secure your work accounts, avoid business email compromise, and protect company data.</p>
+                    </div>
+                    <div class="flip-card-back professionals-card">
+                        <h3>Professional Safety</h3>
+                        <ul>
+                            <li>✓ Use VPN for remote work connections</li>
+                            <li>✓ Enable two-factor authentication</li>
+                            <li>✓ Beware of phishing emails</li>
+                            <li>✓ Keep software updated</li>
+                            <li>✓ Report suspicious activity to IT</li>
+                        </ul>
+                        <a href="https://www.cisa.gov/sites/default/files/2024-09/Cybersecurity-Awareness-Month-2024-Toolkit-Guide.pdf" class="for-you-btn">Get Workplace Safety Kit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front homemakers-card">
+                        <div class="for-you-icon"><i class="bx bx-home"></i></div>
+                        <h2>Homemakers</h2>
+                        <p>Stay safe from online shopping fraud, fake customer care, and social media scams.</p>
+                    </div>
+                    <div class="flip-card-back homemakers-card">
+                        <h3>Home Safety Guide</h3>
+                        <ul>
+                            <li>✓ Shop only on trusted sites</li>
+                            <li>✓ Never share OTP with delivery staff</li>
+                            <li>✓ Use official customer care numbers</li>
+                            <li>✓ Be cautious of social media offers</li>
+                            <li>✓ Secure WiFi with strong password</li>
+                        </ul>
+                        <a href="https://g20.in/content/dam/gtwenty/gtwenty_new/document/Toolkit_Cyber_Edu_and_Cyber_Awareness.pdf" class="for-you-btn">Get Home Safety Kit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="threats" id="threats">
+        <h1>Common Cyber Threats in India</h1>
+        <p class="sub">Understanding these threats is the first step toward protection. Learn to recognize the warning signs.</p>
+        <div class="grid">
+            
+            <div class="card red-card">
+                <div class="card-icon">🐟</div>
+                <h2>Phishing Emails</h2>
+                <p>Fake emails pretending to be from banks, government, or popular services.</p>
+                <ul>
+                    <li>Check sender email address</li>
+                    <li>Look for spelling errors</li>
+                    <li>Never click suspicious links</li>
+                </ul>
+            </div>
+            
+            <div class="card yellow-card">
+                <div class="card-icon">📞</div>
+                <h2>Fake OTP Calls</h2>
+                <p>Scammers call pretending to be bank officials asking for OTP.</p>
+                <ul>
+                    <li>Banks never call for OTP</li>
+                    <li>Verify caller identity</li>
+                    <li>Hang up and call bank directly</li>
+                </ul>
+            </div>
+            
+            <div class="card blue-card">
+                <div class="card-icon">📱</div>
+                <h2>UPI Scams</h2>
+                <p>Fake payment requests, QR code scams, and payment reversal tricks.</p>
+                <ul>
+                    <li>Verify before paying</li>
+                    <li>Use trusted contacts only</li>
+                    <li>Enable transaction alerts</li>
+                </ul>
+            </div>
+            
+            <div class="card purple-card">
+                <div class="card-icon">🪪</div>
+                <h2>Identity Theft</h2>
+                <p>Stealing personal information to commit fraud or open accounts.</p>
+                <ul>
+                    <li>Share minimal personal info</li>
+                    <li>Use strong passwords</li>
+                    <li>Monitor financial statements</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    
+<section id="games" class="threat-simulator py-16 text-white">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">Interactive Cyber Games</h2>
+        <p class="text-center text-orange-100 mb-8">
+            Experience real-life scam scenarios and learn how to respond correctly.
+        </p>
+        
+        <div id="start-screen" class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+            <div class="text-center">
+                <div class="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-gamepad text-4xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Test Your Cyber Safety Skills</h3>
+                <p class="mb-6">10 questions in 60 seconds. Can you spot all the scams?</p>
+                
+                <div class="mb-6">
+                    <div class="flex items-center justify-center space-x-4 mb-4">
+                        <label class="flex items-center">
+                            <input type="checkbox" id="senior-mode" class="mr-2">
+                            <span>Senior Mode (90s)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" id="simple-explanations" class="mr-2">
+                            <span>Simple Explanations</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button id="start-game" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+                    Start Challenge
+                </button>
+                
+                <div class="mt-4 text-sm opacity-75">
+                    <p>Best Score: <span id="best-score">0</span>/10</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-screen" class="hidden bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+            <div class="flex justify-between items-center mb-6">
+                <div class="text-lg font-semibold">
+                    Question <span id="current-question">1</span>/10
+                </div>
+                <div class="text-lg font-bold text-red-300" id="timer">60s</div>
+            </div>
+            
+            <div class="w-full bg-white bg-opacity-20 rounded-full h-3 mb-6">
+                <div id="timer-bar" class="timer-bar h-3 rounded-full bg-red-500" style="width: 100%"></div>
+            </div>
+            
+            <div class="bg-white bg-opacity-20 p-6 rounded-xl mb-6 min-h-32 flex items-center justify-center">
+                <p id="prompt-text" class="text-xl font-medium text-center"></p>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-3 mb-6">
+                <button id="safe-btn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                    <i class="fas fa-check-circle mr-2"></i>Safe
+                </button>
+                <button id="scam-btn" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                    <i class="fas fa-times-circle mr-2"></i>Scam
+                </button>
+                <button id="verify-btn" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                    <i class="fas fa-question-circle mr-2"></i>Verify
+                </button>
+            </div>
+            
+            <div id="explanation" class="bg-white bg-opacity-20 p-4 rounded-lg hidden">
+                <p id="explanation-text"></p>
+            </div>
+            
+            <button id="next-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg hidden mt-4">
+                Next Question <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+
+        <div id="score-screen" class="hidden bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 text-center">
+            <div class="flex justify-center mb-6">
+                <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-trophy text-white text-3xl"></i>
+                </div>
+            </div>
+            
+            <h1 class="text-3xl font-bold mb-2">Challenge Complete!</h1>
+            <p class="mb-6">Your Scam Detection Score</p>
+            
+            <div class="text-5xl font-bold text-yellow-300 mb-2" id="final-score">0</div>
+            <div class="text-lg mb-6">out of 10 questions</div>
+            
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <div class="text-2xl font-bold text-green-300" id="streak-count">0</div>
+                    <div class="text-sm opacity-75">Best Streak</div>
+                </div>
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <div class="text-2xl font-bold text-blue-300" id="time-taken">60s</div>
+                    <div class="text-sm opacity-75">Time Left</div>
+                </div>
+            </div>
+            
+            <div class="mb-6 text-left">
+                <h3 class="font-bold text-lg text-red-300 mb-3">Red Flags You Missed:</h3>
+                <ul id="missed-flags" class="list-disc list-inside space-y-1 opacity-90"></ul>
+            </div>
             
             <div class="mb-6">
-                <div class="flex items-center justify-center space-x-4 mb-4">
-                    <label class="flex items-center">
-                        <input type="checkbox" id="senior-mode" class="mr-2">
-                        <span>Senior Mode (90s)</span>
-                    </label>
-                    <label class="flex items-center">
-                        <input type="checkbox" id="simple-explanations" class="mr-2">
-                        <span>Simple Explanations</span>
-                    </label>
+                <h3 class="font-bold text-lg text-green-300 mb-3">Top Safety Tips:</h3>
+                <div class="space-y-3">
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg text-left">
+                        <div class="font-semibold mb-1">Never act on urgency</div>
+                        <p class="text-sm opacity-75">Scammers create false urgency to bypass critical thinking</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg text-left">
+                        <div class="font-semibold mb-1">Reject collect requests</div>
+                        <p class="text-sm opacity-75">Legitimate refunds never ask you to send money first</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg text-left">
+                        <div class="font-semibold mb-1">Call official helpline</div>
+                        <p class="text-sm opacity-75">Always verify suspicious messages through official channels</p>
+                    </div>
                 </div>
             </div>
             
-            <button id="start-game" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
-                Start Challenge
-            </button>
-            
-            <div class="mt-4 text-sm opacity-75">
-                <p>Best Score: <span id="best-score">0</span>/10</p>
+            <div class="flex space-x-4">
+                <button id="play-again" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg">
+                    Play Again
+                </button>
+                <button id="print-card" class="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg">
+                    <i class="fas fa-print mr-2"></i>Print Card
+                </button>
             </div>
-        </div>
-    </div>
-
-    <div id="game-screen" class="hidden">
-        <div class="flex justify-between items-center mb-6">
-            <div class="text-lg font-semibold">
-                Question <span id="current-question">1</span>/10
-            </div>
-            <div class="text-lg font-bold text-red-300" id="timer">60s</div>
-        </div>
-        
-        <div class="w-full bg-white bg-opacity-20 rounded-full h-3 mb-6">
-            <div id="timer-bar" class="timer-bar h-3 rounded-full bg-red-500" style="width: 100%"></div>
-        </div>
-        
-        <div class="bg-white bg-opacity-20 p-6 rounded-xl mb-6 min-h-32 flex items-center justify-center">
-            <p id="prompt-text" class="text-xl font-medium text-center"></p>
-        </div>
-        
-        <div class="grid grid-cols-3 gap-3 mb-6">
-            <button id="safe-btn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
-                <i class="fas fa-check-circle mr-2"></i>Safe
-            </button>
-            <button id="scam-btn" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
-                <i class="fas fa-times-circle mr-2"></i>Scam
-            </button>
-            <button id="verify-btn" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
-                <i class="fas fa-question-circle mr-2"></i>Verify
-            </button>
-        </div>
-        
-        <div id="explanation" class="bg-white bg-opacity-20 p-4 rounded-lg hidden">
-            <p id="explanation-text"></p>
-        </div>
-        
-        <button id="next-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg hidden mt-4">
-            Next Question <i class="fas fa-arrow-right ml-2"></i>
-        </button>
-    </div>
-
-    <div id="score-screen" class="hidden text-center">
-        <div class="flex justify-center mb-6">
-            <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center">
-                <i class="fas fa-trophy text-white text-3xl"></i>
-            </div>
-        </div>
-        
-        <h1 class="text-3xl font-bold mb-2">Challenge Complete!</h1>
-        <p class="mb-6">Your Scam Detection Score</p>
-        
-        <div class="text-5xl font-bold text-yellow-300 mb-2" id="final-score">0</div>
-        <div class="text-lg mb-6">out of 10 questions</div>
-        
-        <div class="grid grid-cols-2 gap-4 mb-6">
-            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
-                <div class="text-2xl font-bold text-green-300" id="streak-count">0</div>
-                <div class="text-sm opacity-75">Best Streak</div>
-            </div>
-            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
-                <div class="text-2xl font-bold text-blue-300" id="time-taken">60s</div>
-                <div class="text-sm opacity-75">Time Left</div>
-            </div>
-        </div>
-        
-        <div class="mb-6 text-left">
-            <h3 class="font-bold text-lg text-red-300 mb-3">Red Flags You Missed:</h3>
-            <ul id="missed-flags" class="list-disc list-inside space-y-1 opacity-90"></ul>
-        </div>
-        
-        <div class="mb-6">
-            <h3 class="font-bold text-lg text-green-300 mb-3">Top Safety Tips:</h3>
-            <div class="space-y-3">
-                <div class="bg-white bg-opacity-20 p-4 rounded-lg text-left">
-                    <div class="font-semibold mb-1">Never act on urgency</div>
-                    <p class="text-sm opacity-75">Scammers create false urgency to bypass critical thinking</p>
-                </div>
-                <div class="bg-white bg-opacity-20 p-4 rounded-lg text-left">
-                    <div class="font-semibold mb-1">Reject collect requests</div>
-                    <p class="text-sm opacity-75">Legitimate refunds never ask you to send money first</p>
-                </div>
-                <div class="bg-white bg-opacity-20 p-4 rounded-lg text-left">
-                    <div class="font-semibold mb-1">Call official helpline</div>
-                    <p class="text-sm opacity-75">Always verify suspicious messages through official channels</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="flex space-x-4">
-            <button id="play-again" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg">
-                Play Again
-            </button>
-            <button id="print-card" class="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg">
-                <i class="fas fa-print mr-2"></i>Print Card
-            </button>
         </div>
     </div>
 </section>
 
+
+
+
+ <!-- Resources & Reporting -->
 <section id="resources" class="resources">
-    <div class="wrap">
-        <h2>Emergency Resources & Reporting</h2>
-        <p class="resources-sub">
-            Quick access to help and reporting channels when you need it most.
-        </p>
+  <div class="wrap">
+    <h2>Emergency Resources & Reporting</h2>
+    <p class="resources-sub">
+      Quick access to help and reporting channels when you need it most.
+    </p>
 
-        <div class="resources-grid">
-            <div class="resource-card">
-                <div class="resource-icon"><i class="bx bx-phone-call"></i></div>
-                <h3>Emergency Helplines</h3>
-                <ul>
-                    <li><strong>Cyber Crime Helpline:</strong> 
-                        <a href="tel:1930">1930</a>
-                    </li>
-                    <li><strong>National Helpline:</strong> 
-                        <a href="tel:155260">155260</a>
-                    </li>
-                    <li><strong>Emergency Services:</strong> 
-                        <a href="tel:112">112</a>
-                    </li>
-                    <li><strong>Women Helpline:</strong> 
-                        <a href="tel:1091">1091</a>
-                    </li>
-                    <li><strong>Senior Citizen:</strong> 
-                        <a href="tel:14567">14567</a>
-                    </li>
-                    <li><strong>Child Helpline:</strong> 
-                        <a href="tel:1098">1098</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="resources-grid">
+      <!-- Card 1 -->
+      <div class="resource-card">
+        <div class="resource-icon"><i class="bx bx-phone-call"></i></div>
+        <h3>Emergency Helplines</h3>
+        <ul>
+          <li><strong>Cyber Crime Helpline:</strong> 
+            <a href="tel:1930">1930</a>
+          </li>
+          <li><strong>National Helpline:</strong> 
+            <a href="tel:155260">155260</a>
+          </li>
+          <li><strong>Emergency Services:</strong> 
+                <a href="tel:112">112</a>
+            </li>
+          <li><strong>Women Helpline:</strong> 
+            <a href="tel:1091">1091</a>
+          </li>
+          <li><strong>Senior Citizen:</strong> 
+            <a href="tel:14567">14567</a>
+          </li>
+            <li><strong>Child Helpline:</strong> 
+                <a href="tel:1098">1098</a>
+            </li>
+            
+        </ul>
+      </div>
 
-            <div class="resource-card">
-                <div class="resource-icon"><i class="bx bx-globe"></i></div>
-                <h3>Online Reporting</h3>
-                <ul>
-                    <li><strong>Cyber Crime Portal:</strong> 
-                        <a href="https://cybercrime.gov.in" target="_blank">cybercrime.gov.in</a>
-                    </li>
-                    <li><strong>NPCI Reporting:</strong> 
-                        <a href="https://www.npci.org.in/" target="_blank">npci.org.in</a>
-                    </li>
-                    <li><strong>RBI Complaints:</strong> 
-                        <a href="https://www.rbi.org.in/" target="_blank">rbi.org.in</a>
-                    </li>
-                    <li><strong>Bank Fraud:</strong> 
-                        <a href="https://www.rbi.org.in/commonman/English/Scripts/Complaint.aspx" target="_blank">Report Immediately</a>
-                    </li>
-                </ul>
-            </div>
+      <!-- Card 2 -->
+      <div class="resource-card">
+        <div class="resource-icon"><i class="bx bx-globe"></i></div>
+        <h3>Online Reporting</h3>
+        <ul>
+          <li><strong>Cyber Crime Portal:</strong> 
+            <a href="https://cybercrime.gov.in" target="_blank">cybercrime.gov.in</a>
+          </li>
+          <li><strong>NPCI Reporting:</strong> 
+            <a href="https://www.npci.org.in/" target="_blank">npci.org.in</a>
+          </li>
+          <li><strong>RBI Complaints:</strong> 
+            <a href="https://www.rbi.org.in/" target="_blank">rbi.org.in</a>
+          </li>
+          <li><strong>Bank Fraud:</strong> 
+            <a href="https://www.rbi.org.in/commonman/English/Scripts/Complaint.aspx" target="_blank">Report Immediately</a>
+          </li>
+        </ul>
+      </div>
 
-            <div class="resource-card">
-                <div class="resource-icon"><i class="bx bx-download"></i></div>
-                <h3>Download Resources</h3>
-                <a href="https://assets.ctfassets.net/2ntc334xpx65/6Bb0SG4aQQYB7ojVJwaxfa/d6680240656ab29612c498c03f331172/Personal-Cybersecurity-Checklist.English.pdf" target="_blank" class="resource-btn">
-                    <i class="bx bx-file"></i> Quick Safety Checklist
-                </a>
-                <a href="https://www.mha.gov.in/sites/default/files/CyberSafety_English_Web_03122018_0.pdf" target="_blank" class="resource-btn">
-                    <i class="bx bx-book"></i> Complete Safety Guide
-                </a>
-                <a href="https://www.cisa.gov/sites/default/files/publications/CEG_Mobile_Device_Cybersecurity_Checklist_for_Consumers.pdf" target="_blank" class="resource-btn">
-                    <i class="bx bx-mobile"></i> Mobile Safety Tips
-                </a>
-            </div>
-        </div>
+      <!-- Card 3 -->
+      <div class="resource-card">
+        <div class="resource-icon"><i class="bx bx-download"></i></div>
+        <h3>Download Resources</h3>
+        <a href="https://assets.ctfassets.net/2ntc334xpx65/6Bb0SG4aQQYB7ojVJwaxfa/d6680240656ab29612c498c03f331172/Personal-Cybersecurity-Checklist.English.pdf" target="_blank" class="resource-btn">
+          <i class="bx bx-file"></i> Quick Safety Checklist
+        </a>
+        <a href="https://www.mha.gov.in/sites/default/files/CyberSafety_English_Web_03122018_0.pdf" target="_blank" class="resource-btn">
+          <i class="bx bx-book"></i> Complete Safety Guide
+        </a>
+        <a href="https://www.cisa.gov/sites/default/files/publications/CEG_Mobile_Device_Cybersecurity_Checklist_for_Consumers.pdf" target="_blank" class="resource-btn">
+          <i class="bx bx-mobile"></i> Mobile Safety Tips
+        </a>
+      </div>
     </div>
+  </div>
 </section>
-
-<script src="data.js"></script>
-<script src="script.js"></script>
+  
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 
 <footer class="footer">
     <div class="footer-content">
@@ -439,4 +398,6 @@
         <span>©ScamShield. All rights reserved</span>
     </div>
 </footer>
-</body> </html>
+    
+</body>
+</html>
