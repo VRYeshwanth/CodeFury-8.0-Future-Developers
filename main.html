@@ -158,6 +158,141 @@
     </section>
 
 
+    
+<section id="games" class="threat-simulator py-16 text-white">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">Interactive Cyber Games</h2>
+        <p class="text-center text-orange-100 mb-8">
+            Experience real-life scam scenarios and learn how to respond correctly.
+        </p>
+        
+        <div id="start-screen" class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+            <div class="text-center">
+                <div class="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-gamepad text-4xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Test Your Cyber Safety Skills</h3>
+                <p class="mb-6">10 questions in 60 seconds. Can you spot all the scams?</p>
+                
+                <div class="mb-6">
+                    <div class="flex items-center justify-center space-x-4 mb-4">
+                        <label class="flex items-center">
+                            <input type="checkbox" id="senior-mode" class="mr-2">
+                            <span>Senior Mode (90s)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" id="simple-explanations" class="mr-2">
+                            <span>Simple Explanations</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button id="start-game" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+                    Start Challenge
+                </button>
+                
+                <div class="mt-4 text-sm opacity-75">
+                    <p>Best Score: <span id="best-score">0</span>/10</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-screen" class="hidden bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+            <div class="flex justify-between items-center mb-6">
+                <div class="text-lg font-semibold">
+                    Question <span id="current-question">1</span>/10
+                </div>
+                <div class="text-lg font-bold text-red-300" id="timer">60s</div>
+            </div>
+            
+            <div class="w-full bg-white bg-opacity-20 rounded-full h-3 mb-6">
+                <div id="timer-bar" class="timer-bar h-3 rounded-full bg-red-500" style="width: 100%"></div>
+            </div>
+            
+            <div class="bg-white bg-opacity-20 p-6 rounded-xl mb-6 min-h-32 flex items-center justify-center">
+                <p id="prompt-text" class="text-xl font-medium text-center"></p>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-3 mb-6">
+                <button id="safe-btn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                    <i class="fas fa-check-circle mr-2"></i>Safe
+                </button>
+                <button id="scam-btn" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                    <i class="fas fa-times-circle mr-2"></i>Scam
+                </button>
+                <button id="verify-btn" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                    <i class="fas fa-question-circle mr-2"></i>Verify
+                </button>
+            </div>
+            
+            <div id="explanation" class="bg-white bg-opacity-20 p-4 rounded-lg hidden">
+                <p id="explanation-text"></p>
+            </div>
+            
+            <button id="next-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg hidden mt-4">
+                Next Question <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+
+        <div id="score-screen" class="hidden bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 text-center">
+            <div class="flex justify-center mb-6">
+                <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-trophy text-white text-3xl"></i>
+                </div>
+            </div>
+            
+            <h1 class="text-3xl font-bold mb-2">Challenge Complete!</h1>
+            <p class="mb-6">Your Scam Detection Score</p>
+            
+            <div class="text-5xl font-bold text-yellow-300 mb-2" id="final-score">0</div>
+            <div class="text-lg mb-6">out of 10 questions</div>
+            
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <div class="text-2xl font-bold text-green-300" id="streak-count">0</div>
+                    <div class="text-sm opacity-75">Best Streak</div>
+                </div>
+                <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                    <div class="text-2xl font-bold text-blue-300" id="time-taken">60s</div>
+                    <div class="text-sm opacity-75">Time Left</div>
+                </div>
+            </div>
+            
+            <div class="mb-6 text-left">
+                <h3 class="font-bold text-lg text-red-300 mb-3">Red Flags You Missed:</h3>
+                <ul id="missed-flags" class="list-disc list-inside space-y-1 opacity-90"></ul>
+            </div>
+            
+            <div class="mb-6">
+                <h3 class="font-bold text-lg text-green-300 mb-3">Top Safety Tips:</h3>
+                <div class="space-y-3">
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg text-left">
+                        <div class="font-semibold mb-1">Never act on urgency</div>
+                        <p class="text-sm opacity-75">Scammers create false urgency to bypass critical thinking</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg text-left">
+                        <div class="font-semibold mb-1">Reject collect requests</div>
+                        <p class="text-sm opacity-75">Legitimate refunds never ask you to send money first</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg text-left">
+                        <div class="font-semibold mb-1">Call official helpline</div>
+                        <p class="text-sm opacity-75">Always verify suspicious messages through official channels</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex space-x-4">
+                <button id="play-again" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg">
+                    Play Again
+                </button>
+                <button id="print-card" class="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg">
+                    <i class="fas fa-print mr-2"></i>Print Card
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
@@ -234,6 +369,9 @@
     </div>
   </div>
 </section>
+  
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 
 <footer class="footer">
     <div class="footer-content">
@@ -256,10 +394,6 @@
         <span>©ScamShield. All rights reserved</span>
     </div>
 </footer>
-
-
-
-
     
 </body>
 </html>
