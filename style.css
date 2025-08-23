@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -24,12 +28,20 @@ nav {
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
+
 nav i {
     font-size: 3.5rem;
     font-weight: 700;
     color: #00bcd4;
     background: none;
     cursor: pointer;
+}
+.nav-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: none;
+    margin-left: -10px;
 }
 
 nav ul {
@@ -178,7 +190,7 @@ nav ul li a.active {
     }
     .for-you-section .sub {
         font-size: 1.2rem;
-        color: #444;
+        color: #ffffff;
         margin-bottom: 40px;
     }
     .for-you-grid {
