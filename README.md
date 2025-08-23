@@ -129,7 +129,7 @@ ScamShield/
 
 | Game Screen                          | PDF Result                         | Resources Page                                 |
 | ------------------------------------ | ---------------------------------- | ---------------------------------------------- |
-| ![Game](https://ibb.co/C3QmVwDb) | ![PDF](https://ibb.co/tMSLNJvm) | ![Resources](https://ibb.co/tMjnFJFH) |
+| ![Game](/images/game.jpeg) | ![PDF](https://ibb.co/tMSLNJvm) | ![Resources](/images/resource.png) |
 
 ---
 
