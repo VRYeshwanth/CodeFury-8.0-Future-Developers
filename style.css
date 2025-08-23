@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
-    background-color: #181818;
+    background-color: #1f1f1f;
     color: #e0e0e0;
     scroll-behavior: smooth;
 }
@@ -295,13 +295,13 @@ nav ul li a.active {
     }
 
 
+/* Threats Section */
 
 .threats {
         color: #f3f4f6;
         padding: 100px 0;
         border-radius: 24px;
         margin: 40px auto;
-        max-width: 1400px;
         min-height: 100vh;
     }
     .threats h1 {
@@ -392,8 +392,11 @@ nav ul li a.active {
     padding: 80px 20px;
     max-width: fit-content;
     margin: 0 auto;
-    max-height: fit-content;
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .threat-simulator h2 {
@@ -507,15 +510,12 @@ nav ul li a.active {
 }
 
 
-
-
-
-
 /* Resources Section */
 .resources {
-  background: linear-gradient(135deg, #0b0b0b);
-  padding: 80px 20px;
-  color: #e0e0e0;
+  padding: 120px 20px 0;
+}
+.resources .wrap {
+    min-height: 100vh;
 }
 
 .resources h2 {
@@ -624,10 +624,10 @@ nav ul li a.active {
 
 footer {
     width: 100%;
-    background: #181818;
     color: #e0e0e0;
+    background-color: #1f1f1f;
     text-align: center;
-    padding: 40px 0 24px;
+    padding: 0 0 40px;
     border-top: 1px solid #222;
     font-size: 1.25rem;
     font-weight: 500;
@@ -673,6 +673,7 @@ footer {
 }
 
 .footer-logo {
+    background-color: #1f1f1f;
     display: flex;
     align-items: center;
     justify-content: center;
