@@ -244,7 +244,7 @@ nav ul li a.active {
 
 
 
-in css : /* Resources Section */
+/* Resources Section */
 .resources {
   background: linear-gradient(135deg, #0b0b0b);
   padding: 80px 20px;
@@ -299,20 +299,34 @@ in css : /* Resources Section */
   margin-bottom: 10px;
 }
 
+.resource-icon i {
+    background: none;
+}
+
 .resource-card h3 {
+    background: none;
   font-size: 1.3rem;
   margin-bottom: 15px;
   color: #00bcd4;
 }
 
 .resource-card ul {
+    background: none;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .resource-card ul li {
+    background: none;
   margin-bottom: 8px;
+}
+
+.resource-card ul strong {
+    background: none;
+}
+.resource-card ul a {
+    background: none;
 }
 
 .resource-btn {
@@ -334,5 +348,10 @@ in css : /* Resources Section */
   color: #181818;
 }
 
-
+.resources-grid > :nth-child(3) > a{
+    text-decoration: none;
+}
+.resources-grid > :nth-child(3) > a > i {
+    background: none;
+}
 
