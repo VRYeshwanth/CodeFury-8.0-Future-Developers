@@ -1,62 +1,62 @@
 const prompts = [
     {
-        text: "URGENT: Your KYC expires today. Verify immediately at bit.ly/kyc-update-bank",
+        text: "TRAI: Your number linked to crimes. SIM will be blocked unless you verify now.",
+        answer: "scam",
+        explanation: "Red flags: Only telecom operators can block SIMs, not TRAI. Creates false urgency and pressure.",
+        simple: "Only telecom operators can block SIMs. Unsolicited calls threatening action over the phone are a scam. Don't share personal info or pay under pressure."
+    },
+    {
+        text: "FedEx: Your parcel from UK needs customs clearance. Pay ₹150 using this QR now.",
+        answer: "scam",
+        explanation: "Red flags: Courier companies never ask for payment via QR code through calls or messages.",
+        simple: "Courier companies never ask for payment via QR code on calls or messages. Check with official app if unsure."
+    },
+    {
+        text: "UPI: Credit of ₹25,000 received. For security, reply with PAN number.",
+        answer: "scam",
+        explanation: "Red flags: Banks or payment apps never ask for personal ID details after random credits.",
+        simple: "Banks or payment apps never ask for personal ID details after a random credit. Sharing personal info could lead to identity theft."
+    },
+    {
+        text: "Congratulations! You won a ₹5 lakh lottery. Pay ₹750 processing fee to claim.",
+        answer: "scam",
+        explanation: "Red flags: Genuine lotteries never require paying upfront fees to claim winnings.",
+        simple: "Genuine lotteries never require paying upfront fees. This is a classic bait to steal money."
+    },
+    {
+        text: "URGENT: KYC expires today. Verify at bit.ly/kyc-update",
         answer: "scam",
         explanation: "Red flags: Creates false urgency, uses shortlink, KYC verification bait",
-        simple: "Banks never ask for KYC via links - this is a scam"
+        simple: "Scammers use urgency and fake links to steal personal info. Legitimate KYC requests don't use shortlinks or pressure immediate action."
     },
     {
-        text: "UPI Collect request from 'BANK REFUND' for ₹2,500. Note: Verification fee",
-        answer: "scam",
-        explanation: "Red flags: Refunds don't use collect requests, never pay for refunds",
-        simple: "Real refunds come to you, never ask you to pay"
-    },
-    {
-        text: "Your Amazon package #AMZ9845 is out for delivery. Track in your orders.",
-        answer: "safe",
-        explanation: "Safe: Specific order reference, no external links, instructs to use official app",
-        simple: "This looks like a normal delivery update"
-    },
-    {
-        text: "Scan this QR code to receive your income tax refund instantly",
-        answer: "scam",
-        explanation: "Red flags: Refunds are processed automatically, never require QR scanning",
-        simple: "Government refunds don't need QR codes - scam"
-    },
-    {
-        text: "Bank Alert: We will NEVER call to ask for OTP or PIN. Stay safe!",
-        answer: "safe",
-        explanation: "Safe: Educational message, no action required, raises awareness",
-        simple: "This is a safety reminder from your bank"
-    },
-    {
-        text: "TCS Recruitment: Pay ₹499 registration fee to confirm interview slot",
-        answer: "scam",
-        explanation: "Red flags: Reputed companies never charge for interviews, payment demand",
-        simple: "Real companies don't charge for job interviews"
-    },
-    {
-        text: "Income Tax Dept: Refund pending. Update account at income-tax-gov.in/refund",
-        answer: "scam",
-        explanation: "Red flags: Lookalike domain (.in vs .gov.in), refund urgency tactic",
-        simple: "Check the website address carefully - this looks fake"
-    },
-    {
-        text: "Courier: Customs fee ₹248 due. Pay via link in our official app only",
+        text: "Income tax refund pending. Update account details here: income-tax.in.gov.",
         answer: "verify",
-        explanation: "Verify: Could be legitimate but needs confirmation through official app",
-        simple: "Check your tracking in the real app first"
+        explanation: "Verify: Some tax department links look similar but might be fake domains (.in.gov vs .gov.in)",
+        simple: "Some tax department links look similar but might be fake. Always confirm via official tax portals."
     },
     {
-        text: "UPI: ₹1 test credit received from 'PAYTM-TEST'. Please confirm receipt",
+        text: "Update your Aadhaar details on the government portal today.",
         answer: "verify",
-        explanation: "Verify: Unexpected test transactions need verification with bank",
-        simple: "Call your bank to check about test transactions"
+        explanation: "Verify: Government messages should be confirmed through official portals before taking action.",
+        simple: "Always verify government messages via official portals before acting."
     },
     {
-        text: "Security Alert: If unsure about any message, call the number on our website",
+        text: "Courier customs fee ₹100: Pay via FedEx app in the official store.",
         answer: "safe",
-        explanation: "Safe: Correct security advice, promotes verification through official channels",
-        simple: "This is good advice from your bank"
+        explanation: "Safe: Directing to pay through official courier apps from legitimate app stores is secure.",
+        simple: "Paying customs fees only through official courier apps or websites is safe."
+    },
+    {
+        text: "Call your bank's official helpline if you receive suspicious messages.",
+        answer: "safe",
+        explanation: "Safe: Educational message promoting verification through official channels - correct security advice.",
+        simple: "Encouraging checking with official sources is safe advice."
+    },
+    {
+        text: "Your Amazon package is out for delivery. Track in the official app.",
+        answer: "safe",
+        explanation: "Safe: Neutral delivery message without suspicious links, directs to official app for tracking.",
+        simple: "This message is neutral and doesn't include suspicious links. Tracking via the official app is the correct and safe way to check deliveries."
     }
 ];
