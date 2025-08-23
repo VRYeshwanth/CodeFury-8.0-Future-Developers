@@ -371,6 +371,130 @@ nav ul li a.active {
 
 
 
+/*Game section*/
+
+.threat-simulator {
+    padding: 80px 20px;
+    max-width: fit-content;
+    margin: 0 auto;
+    max-height: fit-content;
+
+}
+
+.threat-simulator h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #00bcd4;
+}
+
+.threat-simulator p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #a0aec0;
+    margin-bottom: 32px;
+}
+
+/* Main game cards (start, game, score) */
+#start-screen, #game-screen, #score-screen {
+    background-color: #121212;
+    border: 1px solid #00bcd4;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 188, 212, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#start-screen:hover,
+#game-screen:hover,
+#score-screen:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 188, 212, 0.25);
+}
+
+/* Icon circle */
+#start-screen .w-24, 
+#score-screen .w-20 {
+    background-color: rgba(0, 188, 212, 0.15);
+    border: 1px solid rgba(0, 188, 212, 0.4);
+}
+
+/* Game buttons */
+#safe-btn, #scam-btn, #verify-btn {
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#safe-btn:hover {
+    background-color: #00c853;
+    box-shadow: 0 4px 12px rgba(0,255,128,0.4);
+    transform: translateY(-2px);
+}
+#scam-btn:hover {
+    background-color: #d50000;
+    box-shadow: 0 4px 12px rgba(255,0,64,0.4);
+    transform: translateY(-2px);
+}
+#verify-btn:hover {
+    background-color: #ffab00;
+    box-shadow: 0 4px 12px rgba(255,208,0,0.4);
+    transform: translateY(-2px);
+}
+
+/* Next + Play again buttons */
+#next-btn, #play-again, #print-card {
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #00bcd4;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#next-btn:hover, #play-again:hover, #print-card:hover {
+    background-color: #00acc1;
+    box-shadow: 0 4px 12px rgba(0,188,212,0.4);
+    transform: translateY(-2px);
+}
+
+/* Progress bar container */
+#game-screen .w-full {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 6px;
+}
+
+/* Timer bar */
+#timer-bar {
+    transition: width 1s linear;
+    border-radius: 6px;
+    background-color: #00bcd4;
+}
+
+/* Explanation + tips boxes */
+#explanation,
+#score-screen .bg-white {
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Score highlight */
+#final-score {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #00e5ff;
+}
+
+
+
+
+
 
 /* Resources Section */
 .resources {
