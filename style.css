@@ -240,3 +240,99 @@ nav ul li a.active {
         margin-right: 8px;
         font-size: 1.1em;
     }
+
+
+
+
+in css : /* Resources Section */
+.resources {
+  background: linear-gradient(135deg, #0b0b0b);
+  padding: 80px 20px;
+  color: #e0e0e0;
+}
+
+.resources h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00bcd4;
+}
+
+.resources-sub {
+  text-align: center;
+  color: #a0aec0;
+  margin-bottom: 40px;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.resource-card {
+  
+  background: #1f1f1f;
+  border: 1px solid #00bcd4;
+  width: 100%;
+  border-radius: 16px;
+  padding: 50px 50px 30px;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.6);
+}
+
+.resource-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #00bcd4;
+  color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.resource-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #00bcd4;
+}
+
+.resource-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-card ul li {
+  margin-bottom: 8px;
+}
+
+.resource-btn {
+  display: block;
+  width: 100%;
+  background: rgba(0, 188, 212, 0.15);
+  border: 1px solid #00bcd4;
+  color: #e0e0e0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resource-btn:hover {
+  background: #00bcd4;
+  color: #181818;
+}
+
+
+
