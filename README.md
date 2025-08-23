@@ -125,11 +125,16 @@ ScamShield/
 
 ## 🖼 Screenshots
 
-*(Add actual UI screenshots of your app here)*
 
-| Game Screen                                                  | Resources Page                        |
-| ------------------------------------------------------------ | ------------------------------------- |
-| ![Game](/images/game.jpeg) |                                 | ![Resources](/images/resource.png) |
+
+>### Game Screen                                                  
+
+![Game](/images/game.jpeg) |                                
+
+ >### Resources Page    
+
+ ![Resources](/images/resource.png) |
+
 
 ---
 
