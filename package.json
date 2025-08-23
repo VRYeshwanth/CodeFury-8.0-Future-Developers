@@ -1,0 +1,21 @@
+{
+  "name": "scamshield-india",
+  "version": "1.0.0",
+  "description": "A comprehensive cybersecurity awareness platform with interactive threat simulator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": [
+    "cybersecurity",
+    "awareness",
+    "india",
+    "simulator"
+  ],
+  "author": "Future Developers Team",
+  "license": "MIT"
+}
